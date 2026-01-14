@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Nanum Pen Script";
+    src: url("../fonts/NanumPenScript-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Limelight";
+    src: url("../fonts/Limelight-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@keyframes wiggle {
+    from {
+    }
+
+    17% {
+        transform: rotate(-35deg);
+    }
+
+    33% {
+        transform: rotate(35deg);
+    }
+
+    67% {
+        transform: rotate(-35deg);
+    }
+
+    83% {
+        transform: rotate(35deg);
+    }
+    
+    to {
+        
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: #90BCCB;
+}
+
+.card {
+    width: min(75vw, 750px);
+    height: min(40vw, 400px);
+    margin: 0 auto;
+    padding: min(1.5vw, 15px) min(2.5vw, 25px);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #FDD36B;
+    color: #D3655F;
+    border: min(.5vw, 5px) solid #838D58;
+    border-radius: 11% / 20%;
+    box-shadow: min(-.5vw, -5px) min(.5vw, 5px) 0 #D3655F;
+}
+
+.avatar-div {
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+
+.avatar {
+    height: min(30vw, 300px);
+    aspect-ratio: 1 / 1;
+    border: min(.6vw, 6px) solid #838D58;
+    border-radius: 40%;
+    box-shadow: 0 0 0 min(.6vw, 6px) #D3655F;
+}
+
+.text-container {
+    display: flex;
+    height: inherit;
+    width: min(37vw, 370px);
+    align-items: center;
+}
+
+.text-container2 {
+    width: inherit;
+    line-height: 1;
+}
+
+.name-text {
+    font-family: Limelight, serif;
+    font-size: min(4.5vw, 45px);
+    margin: 0 0 .5em 0;
+}
+
+.name-text::after {
+    content: "~o~o~o~o~o~o~o~o~o~";
+    display:  block;
+    font-family: Nanum Pen Script, serif;
+    font-size: min(1.5vw, 15px);
+    color: #838D58;
+    margin: min(1.9vw, 19px) 0 min(1.9vw, 19px) 0;
+    text-shadow: 0 0 min(.5vw, 5px) rgba(131, 141, 88, .5);
+
+}
+
+.description-text {
+    font-family: Nanum Pen Script, serif;
+    font-size: min(3.8vw, 38px);
+    margin: 0 0 0 0;
+}
+
+.location-text {
+    font-family: Nanum Pen Script, serif;
+    font-size: min(3.8vw, 38px);
+    margin: 0 0 min(2.3vw, 23px) 0;
+}
+
+.links-div {
+    display: flex;
+    justify-content: center;
+}
+
+.linked-img {
+    height: min(7vw, 70px);
+    margin: 0 min(3vw, 30px);
+}
+
+.linked-img.github-logo {
+    border-radius: 50%;
+}
+
+.linked-img:hover {
+    animation-name: wiggle; 
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+}
+
+.linked-img.linkedin-logo {
+    border-radius: 10%;
+}
+
+.linked-img:hover {
+    box-shadow: 0 0 min(1vw, 10px) min(1vw, 10px) lightyellow;
+}
