@@ -3,6 +3,8 @@
 
 This is a project I made for a web development course I'm taking with Scrimba; it is pure HTML and CSS. I made this project to learn how to do more with CSS.
 
+You can visit the site at <a href="https://amavankal.github.io/business-card-website/" target="_blank">https://amavankal.github.io/business-card-website/</a>.
+
 This is what I learned from this project:
  - using divs with classes to create graphics and organize a website
  - using pseudo-classes and pseudo-selectors, like `:hover` and `::after`
